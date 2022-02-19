@@ -1,0 +1,18 @@
+name: dio_api_version_interceptor
+repository: https://github.com/danijel-tolj/dio_api_version_interceptor
+description: A utility package for Dio. Can intercept response headers to check if app version is compatible with API by listening to a stream, or  call a GET method on starting the app.
+ 
+version: 0.0.1
+# homepage: https://www.example.com
+environment:
+  sdk: '>=2.15.1 <3.0.0'
+
+# dependencies:
+#   path: ^1.8.0
+dev_dependencies:
+  http_mock_adapter: ^0.3.2
+  lints: ^1.0.0
+  test: ^1.16.0
+dependencies:
+  dio: ^4.0.4
+  equatable: ^2.0.3
