@@ -10,7 +10,7 @@
 Import the library
 
 ```dart 
-import 'package:state_notifier_test.dart';
+import 'package:dio_api_version_interceptor/dio_api_version_interceptor.dart';
 ```
 
 You can use an explicit call to the endpoint to check the version compatibility.
@@ -26,6 +26,10 @@ You can use an explicit call to the endpoint to check the version compatibility.
 Or you can use the Header Interceptor to check version on every response
 
 ```dart
+ 
+ final headerResultController =
+    StreamController<CompatibilityResult>;
+ ...
  final interceptor = ApiVersionHeaderInterceptor(
     streamController: headerResultController,
     appVersion: appVersion,
